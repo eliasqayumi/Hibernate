@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.Hibernate.entity.Faculty" table="faculty" schema="university">
+        <id name="facultyId">
+            <column name="faculty_id" sql-type="int"/>
+        </id>
+        <property name="facultyName">
+            <column name="faculty_name" sql-type="char(50)" length="50" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
